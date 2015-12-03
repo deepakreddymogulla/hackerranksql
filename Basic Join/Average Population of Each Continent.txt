@@ -1,0 +1,4 @@
+SELECT DISTINCT Country.Continent, TRUNC(AVG(CITY.Population)) 
+FROM CITY, COUNTRY
+WHERE CITY.CountryCode = Country.Code
+GROUP BY Country.Continent;
